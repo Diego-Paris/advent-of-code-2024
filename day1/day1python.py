@@ -1,4 +1,5 @@
 import requests
+from collections import defaultdict
 
 def getInput():
     # The URL of the external API
@@ -44,10 +45,23 @@ def totalDistance(list1, list2):
     
     return total_diff
 
+def similarityScore(list1, list2):
+    counter = defaultdict(int)
+    for num in list2:
+        counter[num] += 1
+    
+    score = 0
+    for num in list1:
+        score += num * counter[num]
+
+    return score
+
 def main():
     list1, list2 = getInput()
     total_diff = totalDistance(list1, list2)
-    print(total_diff)
+    score = similarityScore(list1, list2)
+    print(f"Total difference: {total_diff}")
+    print(f"Similarity score: {score}")
     
 if __name__ == "__main__":
     main()
