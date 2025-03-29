@@ -26,11 +26,12 @@ Requirements:
 
 1. [Python must be installed](https://www.python.org/downloads/)
 2. The `requests` library must be installed (`pip install requests`)
-3. You can now run any python script (`python <script>.py`)
+3. You can now run any Python script (`python <script>.py`)
 
 ### How to run my C# solutions
 
 Requirements:
 
 1. [Dotnet SDK must be installed](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-8.0.407-windows-x64-installer)
-2. 
+2. Install [dotnet-script](https://github.com/dotnet-script/dotnet-script)
+3. You can now run any C# script (`dotnet-script <script>.cs`)
