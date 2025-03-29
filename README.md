@@ -20,7 +20,7 @@ To find your cookie sessions you'll have to:
 4. Open the Cookies section
 5. Copy paste the `session` value
 
-### How to run my python solutions
+### How to run my Python solutions
 
 Requirements:
 
