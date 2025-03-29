@@ -2,7 +2,6 @@ import requests
 from collections import defaultdict
 
 def getInput():
-    # The URL of the external API
     url = "https://adventofcode.com/2024/day/1/input"
     # To find cookie: Developer Tools > Application Tab > Cookies > session
     headers = {
