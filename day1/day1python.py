@@ -11,8 +11,7 @@ def getInput():
     response = requests.get(url, headers=headers)
 
     if response.status_code != 200:
-        print(f"Failed to retrieve data. Status code: {response.status_code}")
-        return None
+        raise Exception(f"Failed to retrieve data. Status code: {response.status_code}")
     
     text_content = response.text
 
